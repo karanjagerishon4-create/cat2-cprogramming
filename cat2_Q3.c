@@ -9,7 +9,7 @@ Reg:PA106/G/29211/25
 #define INPUT_FILE "input.txt"
 #define OUTPUT_FILE "output.txt"
 
-// Task 1: Prompt user for 10 integers and store in input.txt
+// Prompt user for 10 integers and store in input.txt
 void writeInputFile() {
     FILE *fp = fopen(INPUT_FILE, "w");
     if (fp == NULL) {
@@ -28,7 +28,7 @@ void writeInputFile() {
     fclose(fp);
 }
 
-// Task 2: Read integers from input.txt, calculate sum and average, write to output.txt
+//  Read integers from input.txt, calculate sum and average, write to output.txt
 void processInputFile() {
     FILE *in = fopen(INPUT_FILE, "r");
     FILE *out = fopen(OUTPUT_FILE, "w");
@@ -57,7 +57,7 @@ void processInputFile() {
     fclose(out);
 }
 
-// Task 3: Read and print contents of both input.txt and output.txt
+// Read and print contents of both input.txt and output.txt
 void displayFiles() {
     FILE *in = fopen(INPUT_FILE, "r");
     FILE *out = fopen(OUTPUT_FILE, "r");
@@ -89,4 +89,5 @@ int main() {
     processInputFile();
     displayFiles();
     return 0;
+
 }
